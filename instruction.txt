@@ -9,3 +9,7 @@ e.g. response.xpath("//span[@class='text']/text()").extract()
 
 e.g. เอา Path ไปหน้าต่อไป
 response.css("li.next a").xpath("@href").extract()
+
+
+// Output to file
+-o items.json
