@@ -13,3 +13,24 @@ response.css("li.next a").xpath("@href").extract()
 
 // Output to file
 -o items.json
+
+
+======= MySQL =========
+import mysql.connector
+self.conn = mysql.connector.connect(
+  host = 'localhost',
+  user = 'root',
+  passwd = 'XXXXXXX',
+  database = 'myquotes'
+)
+
+======= Mongo =========
+import pymongo
+self.conn = pymongo.MongoClient(
+  'localhost',
+  27017
+)
+db = self.conn['myquotes']
+self.collection = db['quotes']
+
+** self.collection.insert(dict(item))
