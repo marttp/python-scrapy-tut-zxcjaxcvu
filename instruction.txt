@@ -34,3 +34,8 @@ db = self.conn['myquotes']
 self.collection = db['quotes']
 
 ** self.collection.insert(dict(item))
+
+==================================================
+scrapy genspider amazon_spider amazon.com
+
+scrapy crawl amazon
